@@ -12,7 +12,7 @@ map_l = folium.Map(location=[55.9486,-3.2008],zoom_start=12)
 conn = cx_Oracle.connect(dsn="geoslearn",user="s2318635",password="rutuja")
 
 c = conn.cursor()
-query = ("select OGR_FID, TO_CHAR(ORA_GEOMETRY.GET_WKT()) from DATAZONE")
+query = ("select OGR_FID, TO_CHAR(D.ORA_GEOMETRY.GET_WKT()) from DATAZONE D")
 #c.execute("select FID, st_aswkt(GEOMETRY) from datazone")
 c.execute(query)
 polygons = c.fetchall()
