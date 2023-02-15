@@ -8,7 +8,7 @@ import cx_Oracle
 
 map_l = folium.Map(location=[55.9486,-3.2008],zoom_start=12)
 
-conn = cx_Oracle.connect(dsn="geoslearn",user="s2318635",password="rutuja")
+conn = cx_Oracle.connect(dsn="geoslearn",user="######",password="#####")
 
 c = conn.cursor()
 query = "SELECT OGR_FID , SDO_UTIL.TO_WKTGEOMETRY(SDO_CS.TRANSFORM(ORA_GEOMETRY, 4326)) FROM BUS_STOP"
