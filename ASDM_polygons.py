@@ -9,7 +9,7 @@ import cx_Oracle
 
 map_l = folium.Map(location=[55.9486,-3.2008],zoom_start=12)
 
-conn = cx_Oracle.connect(dsn="geoslearn",user="s2318635",password="rutuja")
+conn = cx_Oracle.connect(dsn="#####",user="####",password="###")
 
 c = conn.cursor()
 query = ("select OGR_FID, TO_CHAR(D.ORA_GEOMETRY.GET_WKT()) from DATAZONE D")
