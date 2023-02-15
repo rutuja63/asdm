@@ -43,7 +43,7 @@ qterm = form.getvalue('gspace')
 #uncomment below and add your username and password
 #conn = cx_Oracle.connect("uname/passwd@geoslearn")
 d = conn.cursor()
-d.execute("SELECT /**ORDERED*/C.NAME, C.TELEPHONE, .POSTCODE FROM S2318635.CAFES C, S2318635.GREENSPACE G WHERE G.\"distName1\" = "+str(qterm)+" AND SDO_WITHIN_DISTANCE(C.ORA_GEOMETRY, G.ORA_GEOMETRY,'distance=0.3/0.6/1.0/ UNIT = mile')=TRUE"
+d.execute("SELECT /**ORDERED*/C.NAME, C.TELEPHONE, .POSTCODE FROM S2318635.CAFES C, S2318635.GREENSPACE G WHERE G.\"distName1\" = "+str(qterm)+" AND SDO_WITHIN_DISTANCE(C.ORA_GEOMETRY, G.ORA_GEOMETRY,'distance=0.3/0.6/1.0/ UNIT = mile')=TRUE")
 
 for r in d:
     print(r)
