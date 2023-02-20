@@ -22,19 +22,240 @@
             <p>Edinburgh has rich history, few historic points are plain in sight but often get overlooked, in this web map we try to show two such walks which <br>
                 shows you some intresting hidden as well as popular sites, with nearby facilities.
             </p>
-            <!----open the Modal----->
-            <button id="intro-btn" class="introbtn"><a href="Interactive Map.html">Lets Explore!!</a></button>
                 </div>
             </div>
         </div>
     </section>
-    <div>
+    <div class="row">
+        <div class="column left">
+            <h5 style="font-style:italic;">Explore the walks and its facilities using below farm</h5>
+
+<form name = "search" action="../cgi-bin/query1.py" method="post"> 
+
+Park name:<select name = "PARK_NAME"> 
+
+<option>-</option> 
+
+<option value="St Johns Church">St Johns Church</option> 
+
+<option value="West Princes Street Gardens">West Princes Street Gardens</option> 
+
+<option value="East Princes Street Gardens">East Princes Street Gardens</option> 
+
+<option value="St Andrew Square">St Andrew Square</option> 
+
+<option value="King George V Park">King George V Park</option> 
+
+<option value="Inverleith Park">Inverleith Park</option>  
+
+<option value="Royal Botanic Garden and Arboretum">Royal Botanic Garden and Arboretum</option> 
+
+<option value="Goldonacre Playing Fields George Heriot School Sports Ground">Goldonacre Playing Fields George Heriot School Sports Ground</option> 
+
+<option value="Warriston Cemetery">Warriston Cemetery</option> 
+
+<option value="Warriston recreation ground">Warriston recreation ground</option> 
+
+<option value="Charlotte Square">Charlotte Square</option> 
+</select> 
 
 
-    </div>
-    <div>
+</br>
+Number:<select name = "nearest"> 
+
+<option>-</option> 
+    
+<option value="1">1</option> 
+    
+<option value="2">2</option> 
+    
+<option value="3">3</option> 
+
+    
+</select>
+
+<input type = "submit" value="submit"> 
+</form>
+
+<form name = "search" action="../cgi-bin/query2.py" method="post"> 
+</br>
+Park name:<select name = "PARK_NAME"> 
+
+    <option>-</option> 
+    
+    <option value="St Johns Church">St Johns Church</option> 
+    
+    <option value="West Princes Street Gardens">West Princes Street Gardens</option> 
+    
+    <option value="East Princes Street Gardens">East Princes Street Gardens</option> 
+    
+    <option value="St Andrew Square">St Andrew Square</option> 
+    
+    <option value="King George V Park">King George V Park</option> 
+    
+    <option value="Inverleith Park">Inverleith Park</option>  
+    
+    <option value="Royal Botanic Garden and Arboretum">Royal Botanic Garden and Arboretum</option> 
+    
+    <option value="Goldonacre Playing Fields George Heriot School Sports Ground">Goldonacre Playing Fields George Heriot School Sports Ground</option> 
+    
+    <option value="Warriston Cemetery">Warriston Cemetery</option> 
+    
+    <option value="Warriston recreation ground">Warriston recreation ground</option> 
+    
+    <option value="Charlotte Square">Charlotte Square</option> 
+    </select> 
+</br>
+
+Distance:<select name = "Distance"> 
+
+    <option>-</option> 
+        
+    <option value="0.3">0.3</option> 
+        
+    <option value="0.5">0.5</option> 
+        
+    <option value="1.0">1.0</option>
+    
+    </select>
+
+<input type = "submit" value="submit"> 
 
 
+</form> 
+
+<form name = "search" action="../cgi-bin/query3.py" method="post"> 
+</br>
+Street name:<select name = "Streetname"> 
+
+    <option>-</option> 
+      
+
+    <option value="Princess Street">Princess Street</option>  
+
+    <option value="Charlotte Street">Charlotte Street</option>  
+
+    <option value="Queen Street">Queen Street</option>  
+
+    <option value="Rose Street">Rose Street</option>  
+
+    <option value="George Street">George Street</option>  
+
+    <option value="Hill Street">Hill Street</option>  
+
+    <option value="Eyre Place">Eyre Place</option>  
+
+    <option value="Cannon street">Cannon street</option>  
+
+    <option value="Henderson Row">Henderson Row</option>  
+
+    <option value="Glenogle Road">Glenogle Road</option>  
+
+    <option value="Brandon Terrace">Brandon Terrace</option>
+
+    </select> 
+</br>
+
+Distance:<select name = "distance"> 
+
+    <option>-</option> 
+        
+    <option value="30">30</option> 
+        
+    <option value="50">50</option> 
+        
+    <option value="80">80</option>
+    
+    </select>
+
+<input type = "submit" value="submit"> 
+
+
+</form> 
+
+<form name = "search" action="../cgi-bin/query4.py" method="post"> 
+</br>
+Street name:<select name = "Streetname"> 
+
+    <option>-</option> 
+      
+
+    <option value="Princess Street">Princess Street</option>  
+
+    <option value="Charlotte Street">Charlotte Street</option>  
+
+    <option value="Queen Street">Queen Street</option>  
+
+    <option value="Rose Street">Rose Street</option>  
+
+    <option value="George Street">George Street</option>  
+
+    <option value="Hill Street">Hill Street</option>  
+
+    <option value="Eyre Place">Eyre Place</option>  
+
+    <option value="Cannon street">Cannon street</option>  
+
+    <option value="Henderson Row">Henderson Row</option>  
+
+    <option value="Glenogle Road">Glenogle Road</option>  
+
+    <option value="Brandon Terrace">Brandon Terrace</option>
+
+    </select> 
+
+
+<input type = "submit" value="submit"> 
+</form> 
+
+
+
+
+
+
+<form name = "search" action="../cgi-bin/query5.py" method="post"> 
+</br>
+Neighbour name:<select name = "datazone"> 
+
+    <option>-</option> 
+
+<option value="Old Town">Old Town</option>  
+
+<option value="Princes Street and Leith Street">Princes Street and Leith Street</option>  
+
+<option value=" New Town">New Town</option>  
+
+<option value="Canonmills">Canonmills</option>  
+
+<option value=" Powderhall">Powderhall</option>  
+
+<option value="Stockbridge">Stockbridge</option>  
+
+<option value="Comely Bank">Comely Bank</option>  
+
+<option value="Craiglith">Craiglith</option>  
+
+<option value="Deans Village">Deans Village</option>  
+
+<option value="Inverleith"> Inverleith</option>  
+
+<option value="Goldenacre">Goldenacre</option> 
+
+<option value="Warriston"> Warriston</option> 
+
+<option value="Warriston"> Warriston</option> 
+
+<input type = "submit" value="submit"> 
+</form> 
+
+</body> 
+
+</html> 
+          </div>
+          <div class="column right">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+          </div>
     </div>
     <section class="footer">
         <div class="copyright">&copy;The University of Edinburgh | School of Geosciences 2022-2023</div>
