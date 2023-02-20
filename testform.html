@@ -10,11 +10,9 @@
 
 <body> 
 
-<form name = "search" action="./cgi-bin/query1.py" method="post"> 
+<form name = "search" action="../cgi-bin/query1.py" method="post" target="my_iframe"> 
 
-Park name:<select name = "PARK_NAME"> 
-
-<option>-</option> 
+Park name:<select name = "PARK_NAME"> <option>-</option> 
 
 <option value="St Johns Church">St Johns Church</option> 
 
@@ -38,26 +36,22 @@ Park name:<select name = "PARK_NAME">
 
 <option value="Charlotte Square">Charlotte Square</option> 
 </select> 
-
-
-</br>
-Number:<select name = "nearest"> 
-
-<option>-</option> 
-    
+<br>
+Number:<select name = "nearest"> <option>-</option> 
 <option value="1">1</option> 
     
 <option value="2">2</option> 
     
 <option value="3">3</option> 
 
-    
 </select>
-
+<div> </div>
 <input type = "submit" value="submit"> 
+
 </form>
 
-<form name = "search" action="./cgi-bin/query2.py" method="post"> 
+
+<form name = "search" action="../cgi-bin/query2.py" method="post"> 
 </br>
 Park name:<select name = "PARK_NAME"> 
 
@@ -104,7 +98,7 @@ Distance:<select name = "Distance">
 
 </form> 
 
-<form name = "search" action="./cgi-bin/query3.py" method="post"> 
+<form name = "search" action="../cgi-bin/query3.py" method="post"> 
 </br>
 Street name:<select name = "Streetname"> 
 
@@ -153,7 +147,7 @@ Distance:<select name = "distance">
 
 </form> 
 
-<form name = "search" action="./cgi-bin/query4.py" method="post"> 
+<form name = "search" action="../cgi-bin/query4.py" method="post"> 
 </br>
 Street name:<select name = "Streetname"> 
 
@@ -193,7 +187,7 @@ Street name:<select name = "Streetname">
 
 
 
-<form name = "search" action="./cgi-bin/query5.py" method="post"> 
+<form name = "search" action="../cgi-bin/query5.py" method="post"> 
 </br>
 Neighbour name:<select name = "datazone"> 
 
