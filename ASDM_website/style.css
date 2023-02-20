@@ -91,7 +91,8 @@ nav{
 
 .row{
     background-color: #fff;
-    height: 1000px;
+    height: 750px;
+    border: 5px solid black;
 
 
 } 
@@ -101,10 +102,12 @@ nav{
     float: left;
     padding: 10px;
 
+
   }
   
 .left {
     width: 25%;
+
   }
   
 .right {

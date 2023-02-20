@@ -36,4 +36,4 @@ print("Content-type: text/html\n")
 
 print(map_l.get_root().render()) 
 
-map_l.save("cafes.html")
+map_l.save("BUS_STOP.html")

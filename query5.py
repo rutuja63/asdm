@@ -4,7 +4,7 @@ import cgitb
 import folium
 import cx_Oracle
 def query5():
-    return "SELECT G.NAME, G.\"Shape_Area\", SDO_UTIL.TO_WKTGEOMETRY(SDO_CS.TRANSFORM(G.ORA_GEOMETRY, 4326)) FROM GREENSPACE G,DATAZONE D  WHERE D.\"Name\"  = '%s' AND SDO_OVERLAPS(G.ORA_GEOMETRY, D.ORA_GEOMETRY)='TRUE'" %(datazone)
+    return "SELECT G.NAME, G.\"Shape_Area\", SDO_UTIL.TO_WKTGEOMETRY(G.ORA_GEOMETRY) FROM GREENSPACE G,DATAZONE D  WHERE D.\"Name\"  = '%s' AND SDO_OVERLAPS(G.ORA_GEOMETRY, D.ORA_GEOMETRY)='TRUE'" %(datazone)
 
 cgitb.enable()
 try:

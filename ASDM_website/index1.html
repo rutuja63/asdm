@@ -19,7 +19,7 @@
         </nav>
         <div class="title-box">
             <h1>Hidden Walks of Edinburgh</h1>
-            <p>Edinburgh has rich history, few historic points are plain in sight but often get overlooked, in this web map we try to show two such walks which <br>
+            <p>Edinburgh has rich history, historic points are plain in sight but often get overlooked, in this web map we try to show two such walks which <br>
                 shows you some intresting hidden as well as popular sites, with nearby facilities.
             </p>
                 </div>
@@ -27,14 +27,12 @@
         </div>
     </section>
     <div class="row">
+        <h3 style="text-align:center;">Explore the hidden walk and it's nearby facilities</h3>
         <div class="column left">
-            <h5 style="font-style:italic;">Explore the walks and its facilities using below farm</h5>
-
-<form name = "search" action="../../cgi-bin/query1.py" method="post" target="my_iframe1"> 
-
-Park name:<select name = "PARK_NAME"> 
-
-<option>-</option> 
+            
+<h4>Find the nearest one, two or three cafes of greenspace</h4>
+<form name = "search" action="../../cgi-bin/query1.py" method="post" target="my_iframe"> 
+Park name:<select name = "PARK_NAME">  <option>-</option> 
 
 <option value="St Johns Church">St Johns Church</option> 
 
@@ -57,11 +55,9 @@ Park name:<select name = "PARK_NAME">
 <option value="Warriston recreation ground">Warriston recreation ground</option> 
 
 <option value="Charlotte Square">Charlotte Square</option> 
-</select> 
-</br>
-Number:<select name = "nearest"> 
-
-<option>-</option> 
+</select>
+<br>
+Option:<select name = "nearest"><br><option>-</option> 
     
 <option value="1">1</option> 
     
@@ -72,7 +68,7 @@ Number:<select name = "nearest">
 
 <input type = "submit" value="submit"> 
 </form>
-
+<h4>search for the bus stops near green space at different distances</h4>
 <form name = "search" action="../../cgi-bin/query2.py" method="post" target="my_iframe"> 
 </br>
 Park name:<select name = "PARK_NAME"> 
@@ -114,7 +110,7 @@ Distance:<select name = "Distance">
     <option value="1.0">1.0</option>
     
     </select>
-
+<br>
 <input type = "submit" value="submit"> 
 </form> 
 
@@ -197,20 +193,11 @@ Street name:<select name = "Streetname">
     <option value="Brandon Terrace">Brandon Terrace</option>
 
     </select> 
-
-
 <input type = "submit" value="submit"> 
 </form> 
-<br>
-<br>
-<br>
 
 
-
-
-
-
-<form name = "search" action="../../cgi-bin/query5.py" method="post"> 
+<form name = "search" action="../../cgi-bin/query5.py" method="post" target="my_iframe"> 
 </br>
 Neighbour name:<select name = "datazone"> 
 
@@ -244,7 +231,7 @@ Neighbour name:<select name = "datazone">
 <input type = "submit" value="submit"> 
 </form> 
 
-<form name = "search" action="../../cgi-bin/query6.py" method="post" target="my_iframe"> 
+<form name = "search" action="../../cgi-bin/query6bkup.py" method="post" target="my_iframe"> 
 </br>
 Park name:<select name = "OGR_FID"> 
 
@@ -277,10 +264,9 @@ Park name:<select name = "OGR_FID">
 </br>
 </div>
           <div class="column right">
-            <h2>Hidden Walks MAP</h2>
             <!-- <iframe id = "map-frame" width="100%" height="600" frameborder="0"></iframe> -->
             <iframe name="my_iframe" width="100%", height="500"></iframe>
-            <iframe name="my_iframe1" width="100%", height="500"></iframe>
+            <!-- <iframe name="my_iframe1" width="100%", height="500"></iframe> -->
 
           </div>
     </div>
@@ -299,6 +285,7 @@ Park name:<select name = "OGR_FID">
             
         frame.src=maps[i];
         </script> -->
+
 
 </body>
 
