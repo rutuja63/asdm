@@ -30,7 +30,7 @@
         <div class="column left">
             <h5 style="font-style:italic;">Explore the walks and its facilities using below farm</h5>
 
-<form name = "search" action="../../cgi-bin/query1.py" method="post"> 
+<form name = "search" action="../../cgi-bin/query1.py" method="post" target="my_iframe1"> 
 
 Park name:<select name = "PARK_NAME"> 
 
@@ -58,8 +58,6 @@ Park name:<select name = "PARK_NAME">
 
 <option value="Charlotte Square">Charlotte Square</option> 
 </select> 
-
-
 </br>
 Number:<select name = "nearest"> 
 
@@ -69,21 +67,19 @@ Number:<select name = "nearest">
     
 <option value="2">2</option> 
     
-<option value="3">3</option> 
-
-    
+<option value="3">3</option>   
 </select>
 
 <input type = "submit" value="submit"> 
 </form>
 
-<form name = "search" action="../../cgi-bin/query2.py" method="post"> 
+<form name = "search" action="../../cgi-bin/query2.py" method="post" target="my_iframe"> 
 </br>
 Park name:<select name = "PARK_NAME"> 
 
     <option>-</option> 
     
-    <option value="St Johns Church">St Johns Church</option> 
+    <option value="St Johns Church">St John's Church</option> 
     
     <option value="West Princes Street Gardens">West Princes Street Gardens</option> 
     
@@ -120,11 +116,9 @@ Distance:<select name = "Distance">
     </select>
 
 <input type = "submit" value="submit"> 
-
-
 </form> 
 
-<form name = "search" action="../../cgi-bin/query3.py" method="post"> 
+<form name = "search" action="../../cgi-bin/query3.py" method="post" target="my_iframe"> 
 </br>
 Street name:<select name = "Streetname"> 
 
@@ -207,6 +201,9 @@ Street name:<select name = "Streetname">
 
 <input type = "submit" value="submit"> 
 </form> 
+<br>
+<br>
+<br>
 
 
 
@@ -217,8 +214,7 @@ Street name:<select name = "Streetname">
 </br>
 Neighbour name:<select name = "datazone"> 
 
-    <option>-</option> 
-
+<option>-</option> 
 <option value="Old Town">Old Town</option>  
 
 <option value="Princes Street and Leith Street">Princes Street and Leith Street</option>  
@@ -248,21 +244,63 @@ Neighbour name:<select name = "datazone">
 <input type = "submit" value="submit"> 
 </form> 
 
-</body> 
+<form name = "search" action="../../cgi-bin/query6.py" method="post" target="my_iframe"> 
+</br>
+Park name:<select name = "OGR_FID"> 
 
-</html> 
-          </div>
+    <option>-</option> 
+    
+    <option value="1">St John's Church</option> 
+    
+    <option value="2">West Princes Street Gardens</option> 
+    
+    <option value="3">East Princes Street Gardens</option> 
+    
+    <option value="4">St Andrew Square</option> 
+    
+    <option value="5">King George V Park</option> 
+    
+    <option value="6">Inverleith Park</option>  
+    
+    <option value="7">Royal Botanic Garden and Arboretum</option> 
+    
+    <option value="8">Goldonacre Playing Fields George Heriot School Sports Ground</option> 
+    
+    <option value="9">Warriston Cemetery</option> 
+    
+    <option value="10">Warriston recreation ground</option> 
+    
+    <option value="11">Charlotte Square</option> 
+
+    <input type = "submit" value="submit"> 
+    </select> 
+</br>
+</div>
           <div class="column right">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
+            <h2>Hidden Walks MAP</h2>
+            <!-- <iframe id = "map-frame" width="100%" height="600" frameborder="0"></iframe> -->
+            <iframe name="my_iframe" width="100%", height="500"></iframe>
+            <iframe name="my_iframe1" width="100%", height="500"></iframe>
+
           </div>
     </div>
     <section class="footer">
         <div class="copyright">&copy;The University of Edinburgh | School of Geosciences 2022-2023</div>
     </section>
     
+    <!-- <script>
+        var maps =["../../cgi-bin/query1.py","../../cgi-bin/query2.py", "../../cgi-bin/query3.py","../../cgi-bin/query4.py","../../cgi-bin/query5.py"]
+        var i=0;
+        var frame = document.getElementById("maps");
+        frame.onload=function() {
+            i= (i+1)% maps.length;
+            frame.src=maps[i];
+        }
+            
+        frame.src=maps[i];
+        </script> -->
 
-
+</body>
 
 
 
