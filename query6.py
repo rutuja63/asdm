@@ -59,7 +59,7 @@ try:
         #populate the map and popups with information from the query
         for element in coordPoints:
             folium.Marker(location = [element[3][1],element[3][0]], popup = '<a href="https://'+str(element[1])+'" target="blank">'+str(element[0])+'</a><br><br>Tel: '+element[2]).add_to(map_1)
-        d.close
+        conn.close
     
     print("<Content-Type: text/html><br>")
     print(map_1.get_root().render())
